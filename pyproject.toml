@@ -1,0 +1,10 @@
+[project]
+name = "epub"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ebooklib>=0.18",
+    "lxml>=5.3.0",
+]
