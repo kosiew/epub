@@ -17,8 +17,8 @@ This project provides a tool to convert EPUB v3 files to EPUB v2 format using Ca
 
 2. Set up the virtual environment and install dependencies:
     ```sh
-    source .venv/bin/activate
-    pip install -r requirements.txt
+    Use uv to manage environment
+    uv sync to install dependencies
     ```
 
 ## Usage
