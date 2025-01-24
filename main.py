@@ -1,4 +1,3 @@
-from ebooklib import epub
 import os
 from typing import Protocol
 import typer
