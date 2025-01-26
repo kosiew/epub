@@ -37,14 +37,14 @@ class EpubConverterImpl:
 
 
 @app.command()
-def convert_epub_to_v2(
+def convert_to_epub_v2(
     input_folder: str, output_folder: str = DEFAULT_OUTPUT_FOLDER
 ) -> None:
     print(f"==> Starting conversion from {input_folder} to {output_folder}")
     converter = EpubConverterImpl()
     for root, _, files in os.walk(input_folder):
         for file in files:
-            if file.endswith(".epub"):
+            if file.endswith((".epub", ".mobi")):                
                 input_file = os.path.join(root, file)
                 relative_path = os.path.relpath(root, input_folder)
                 output_dir = os.path.join(output_folder, relative_path)
